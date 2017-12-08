@@ -1,0 +1,29 @@
+{
+  "name": "events-calendar-csv-generator",
+  "version": "1.0.0",
+  "description": "Generate csv file to input into the events calendar plugin",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine src/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julesfpollender/events-calendar-csv-generator.git"
+  },
+  "keywords": [
+    "events-calendar",
+    "importer",
+    "csv",
+    "generator"
+  ],
+  "author": "Jules Favreau-Pollender",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Julesfpollender/events-calendar-csv-generator/issues"
+  },
+  "homepage": "https://github.com/Julesfpollender/events-calendar-csv-generator#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
