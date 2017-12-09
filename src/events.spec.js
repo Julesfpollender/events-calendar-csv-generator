@@ -41,22 +41,18 @@ describe('events', () => {
         { [scHeader.DATE_START]: '2018-02-12' },
         { [scHeader.DATE_START]: '2018-02-19' },
         { [scHeader.DATE_START]: '2018-02-26' },
-        { [scHeader.DATE_START]: '2018-03-11' },
-        { [scHeader.DATE_START]: '2018-03-18' },
-        { [scHeader.DATE_START]: '2018-03-25' },
-        { [scHeader.DATE_START]: '2018-04-01' },
-        { [scHeader.DATE_START]: '2018-04-08' },
-        { [scHeader.DATE_START]: '2018-04-15' }
+        { [scHeader.DATE_START]: '2018-03-12' },
+        { [scHeader.DATE_START]: '2018-03-19' },
+        { [scHeader.DATE_START]: '2018-03-26' },
+        { [scHeader.DATE_START]: '2018-04-02' },
+        { [scHeader.DATE_START]: '2018-04-09' },
+        { [scHeader.DATE_START]: '2018-04-16' }
       ];
       const eventsList = eventsModule.generateRecurringEvents(
         mockEvents,
         mockConfig
       );
       expect(eventsList).toEqual(expectedResult);
-      done();
-    });
-    it('should generate events with the corresponding csv header', done => {
-      //TODO
       done();
     });
   });

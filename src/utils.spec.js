@@ -44,6 +44,7 @@ describe('utils', () => {
       expect(utils.addDays('2018-01-08', 2)).toEqual('2018-01-10');
       expect(utils.addDays('2018-01-08', 25)).toEqual('2018-02-02');
       expect(utils.addDays('2018-01-08', 0)).toEqual('2018-01-08');
+      expect(utils.addDays('2018-02-26', 14)).toEqual('2018-03-12');
       done();
     });
   });

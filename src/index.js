@@ -1,22 +1,24 @@
-const { generalConfig, events, generateCompleteEvents } = require('../config');
+const { getConfig, generateCompleteEvents } = require('../config');
 const eventsModule = require('./events');
 const fs = require('fs');
 
 const schema = require('../schema');
 const scHeader = schema.csvHeader;
+const generalConfig = getConfig().general;
+const events = getConfig().events;
 
 const output = 'H18.csv';
 const delimiter = ', ';
 generateCSV();
 
 function generateCSV() {
-  fs.unlink(output).then(() => {
+  fs.unlink(output, () => {
     writeFileHeader(scHeader);
     const eventsList = eventsModule.generateRecurringEvents(
       events,
       generalConfig
     );
-    writeFile(generateCompleteEvents(eventsList), header);
+    writeFile(generateCompleteEvents(eventsList), scHeader);
   });
 }
 
@@ -27,10 +29,10 @@ function writeFileHeader(header) {
   fs.appendFileSync(output, line + '\n');
 }
 
-function writeFile(event, header) {
+function writeFile(events, header) {
   events.forEach(event => {
     const line = Object.keys(header)
-      .map(key => event[key])
+      .map(key => event[header[key]])
       .join(delimiter);
     fs.appendFileSync(output, line + '\n');
   });

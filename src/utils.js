@@ -12,8 +12,9 @@ function isDateBetween(date, dateFrom, dateTo) {
 }
 
 function addDays(date, nbDays) {
-  var result = new Date(date);
-  result.setDate(result.getDate() + nbDays);
+  const result = new Date(
+    new Date(date).getTime() + nbDays * 24 * 60 * 60 * 1000
+  );
   return dateToString(result);
 }
 
