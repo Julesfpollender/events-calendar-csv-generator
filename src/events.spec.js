@@ -5,14 +5,13 @@ const scConfig = schema.config;
 const utils = require('./utils');
 
 describe('events', () => {
-  const mockConfig = {
-    [scConfig.NB_RECURRING_WEEK]: 15,
-    [scConfig.BREAK_FROM]: '2018-03-05',
-    [scConfig.BREAK_TO]: '2018-03-09'
-  };
-
   describe('generateRecurringEvents', () => {
     it('should generate events for the correct number of weeks and with break time', done => {
+      const mockConfig = {
+        [scConfig.NB_RECURRING_WEEK]: 15,
+        [scConfig.BREAK_FROM]: '2018-03-05',
+        [scConfig.BREAK_TO]: '2018-03-09'
+      };
       const mockEvents = [
         {
           [scHeader.TITLE]: 'event1',
@@ -30,7 +29,12 @@ describe('events', () => {
       expect(eventsList.length).toEqual(2 * (15 - 1));
       done();
     });
-    it('should correctly create events base on dates', done => {
+    it('should correctly create events base on dates and with break date', done => {
+      const mockConfig = {
+        [scConfig.NB_RECURRING_WEEK]: 15,
+        [scConfig.BREAK_FROM]: '2018-03-05',
+        [scConfig.BREAK_TO]: '2018-03-09'
+      };
       const mockEvents = [{ [scHeader.DATE_START]: '2018-01-08' }];
       const expectedResult = [
         { [scHeader.DATE_START]: '2018-01-08' },
@@ -53,6 +57,41 @@ describe('events', () => {
         mockConfig
       );
       expect(eventsList).toEqual(expectedResult);
+      done();
+    });
+    it('should not consider break time if breaks date values are undefined or invalid', done => {
+      const mockNbWeek = 15;
+      const mockConfigUndefined = {
+        [scConfig.NB_RECURRING_WEEK]: mockNbWeek,
+        [scConfig.BREAK_FROM]: undefined,
+        [scConfig.BREAK_TO]: '2018-03-09'
+      };
+      const mockConfigInvalid = {
+        [scConfig.NB_RECURRING_WEEK]: mockNbWeek,
+        [scConfig.BREAK_FROM]: '2018-03-09',
+        [scConfig.BREAK_TO]: '2018-03-01'
+      };
+      const mockConfigNoBreak = {
+        [scConfig.NB_RECURRING_WEEK]: mockNbWeek
+      };
+      const mockEvents = [
+        {
+          [scHeader.TITLE]: 'event1',
+          [scHeader.DATE_START]: '2018-01-08'
+        }
+      ];
+      expect(
+        eventsModule.generateRecurringEvents(mockEvents, mockConfigUndefined)
+          .length
+      ).toEqual(mockNbWeek);
+      expect(
+        eventsModule.generateRecurringEvents(mockEvents, mockConfigInvalid)
+          .length
+      ).toEqual(mockNbWeek);
+      expect(
+        eventsModule.generateRecurringEvents(mockEvents, mockConfigNoBreak)
+          .length
+      ).toEqual(mockNbWeek);
       done();
     });
   });
