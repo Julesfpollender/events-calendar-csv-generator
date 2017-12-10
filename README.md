@@ -1,15 +1,14 @@
 # events-calendar-csv-generator
 
 Script to generate an easy csv file to import into the Events Calendar plugin.
-It will generate recurring events based on the number of specified weeks with
-break time in the middle.
-
-Just need to input the first week in the config file and general config to
-generate output csv.
+It will generate recurring events based on the number of specified weeks with or
+withouts break time in the middle.
 
 ## To Execute
 
-`node src/index.js`
+1. Specify events (first week that will be repeated every week) and general
+   config in the config.js
+2. Generate csv file `node src/index.js`
 
 ## To Test
 
