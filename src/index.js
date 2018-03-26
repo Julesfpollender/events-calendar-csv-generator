@@ -7,7 +7,7 @@ const scHeader = schema.csvHeader;
 const generalConfig = getConfig().general;
 const events = getConfig().events;
 
-const output = 'H18.csv';
+const output = generalConfig[schema.config.SESSION_NAME] + '.csv';
 const delimiter = ', ';
 generateCSV();
 

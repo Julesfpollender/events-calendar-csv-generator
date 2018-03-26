@@ -16,8 +16,9 @@ module.exports = {
     DESCRIPTION: 'DESCRIPTION'
   },
   config: {
+    SESSION_NAME: 'sessionName',
     NB_RECURRING_WEEK: 'repeating',
     BREAK_FROM: 'breakFrom',
-    BREAK_TO: 'breakTo'
+    BREAK_TO: 'breakTo',
   }
 };
