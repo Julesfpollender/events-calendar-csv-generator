@@ -8,7 +8,8 @@ withouts break time in the middle.
 
 1. Specify events (first week that will be repeated every week) and general
    config in the config.js
-2. Generate csv file `node src/index.js`
+2. Generate csv file `npm start` or `node src/index.js`
+3. You can now import generated csv file to the Event Calendar plugin
 
 ## To Test
 

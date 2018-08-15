@@ -4,6 +4,7 @@
   "description": "Generate csv file to input into the events calendar plugin",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "./node_modules/.bin/jasmine src/*.spec.js"
   },
   "repository": {
