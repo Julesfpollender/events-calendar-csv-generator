@@ -34,6 +34,17 @@ const events = [
   {
     [header.TITLE]: 'Toning/Fitness',
     [header.DATE_START]: '2018-09-10',
+    [header.HOUR_START]: '9:30:00',
+    [header.HOUR_END]: '10:30:00',
+    [header.PLACE]: venues.COOP_GYM_SANTE_SUTTON,
+    [header.CATEGORY]: 'Zumba Toning/Fitness',
+    [header.IMAGE]: '',
+    [header.DESCRIPTION]:
+      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  },
+  {
+    [header.TITLE]: 'Toning/Fitness',
+    [header.DATE_START]: '2018-09-10',
     [header.HOUR_START]: '18:15:00',
     [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -47,17 +58,6 @@ const events = [
     [header.DATE_START]: '2018-09-11',
     [header.HOUR_START]: '9:00:00',
     [header.HOUR_END]: '10:00:00',
-    [header.PLACE]: venues.CAMP_GARAGONA,
-    [header.CATEGORY]: 'Zumba Toning/Fitness',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
-  {
-    [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2018-09-12',
-    [header.HOUR_START]: '9:30:00',
-    [header.HOUR_END]: '10:30:00',
     [header.PLACE]: venues.CAMP_GARAGONA,
     [header.CATEGORY]: 'Zumba Toning/Fitness',
     [header.IMAGE]: '',
@@ -95,7 +95,7 @@ const events = [
     [header.CATEGORY]: 'zumba-strong',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   },
   {
     [header.TITLE]: 'Zumba Strong',
@@ -106,7 +106,7 @@ const events = [
     [header.CATEGORY]: 'zumba-strong',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Vous devez vous inscrire sur le site de la ville de Knowlton <br/>*Se présenter 5 minutes à l\'avance en cours de session.<br/><br/>'
+      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Vous devez vous inscrire sur le site de la ville de Knowlton <br/>*Se présenter 5 minutes à l\'avance en cours de session.<br/><br/>'
   }
 ];
 
@@ -121,7 +121,7 @@ function generateCompleteEvents(events) {
       [header.DESCRIPTION]: buttonShortcode + event[header.DESCRIPTION],
       [header.SHOW_PLACE_MAP]: 1,
       [header.SHOW_MAP]: 1,
-      [header.PRICE]: 12,
+      [header.PRICE]: 14,
       [header.CURRENCY]: '$',
       [header.CURRENCY_POSITION]: 'suffix'
     });
