@@ -15,10 +15,10 @@ function getConfig() {
 
 // Global config to generate reccuring events
 const general = {
-  [schema.config.SESSION_NAME]: 'automne-2018',
-  [schema.config.NB_RECURRING_WEEK]: 15,
-  [schema.config.BREAK_FROM]: '2018-11-05',
-  [schema.config.BREAK_TO]: '2018-11-09'
+  [schema.config.SESSION_NAME]: 'hiver-2018',
+  [schema.config.NB_RECURRING_WEEK]: 13,
+  [schema.config.BREAK_FROM]: '2019-03-04',
+  [schema.config.BREAK_TO]: '2019-03-10'
 };
 
 const venues = {
@@ -26,17 +26,20 @@ const venues = {
   HOTEL_VILLE_FRELIGSBURG: 158,
   ECOLE_CLE_DES_CHAMPS: 48,
   COOP_GYM_SANTE_SUTTON: 157,
-  KNOWLTON: 3738
+  KNOWLTON: 3738,
+  SALLE_ALEC_PELLETIER: 4214,
+  ECOLE_SAINT_EDOUARD: 4215,
+  BALLET_CLASSIQUE: 4216
 }
 
 // Events that will be repeated every weeks is defined here
 const events = [
   {
     [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2018-09-10',
+    [header.DATE_START]: '2019-01-14',
     [header.HOUR_START]: '9:30:00',
     [header.HOUR_END]: '10:30:00',
-    [header.PLACE]: venues.COOP_GYM_SANTE_SUTTON,
+    [header.PLACE]: venues.SALLE_ALEC_PELLETIER,
     [header.CATEGORY]: 'Zumba Toning/Fitness',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
@@ -44,7 +47,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2018-09-10',
+    [header.DATE_START]: '2019-01-14',
     [header.HOUR_START]: '18:15:00',
     [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -55,7 +58,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2018-09-11',
+    [header.DATE_START]: '2019-01-15',
     [header.HOUR_START]: '9:00:00',
     [header.HOUR_END]: '10:00:00',
     [header.PLACE]: venues.CAMP_GARAGONA,
@@ -66,21 +69,21 @@ const events = [
   },
   {
     [header.TITLE]: 'Zumba Fitness groupe Fadoq (Zumba Gold)',
-    [header.DATE_START]: '2018-09-12',
+    [header.DATE_START]: '2019-01-16',
     [header.HOUR_START]: '10:45:00',
     [header.HOUR_END]: '11:45:00',
-    [header.PLACE]: venues.COOP_GYM_SANTE_SUTTON,
+    [header.PLACE]: venues.BALLET_CLASSIQUE,
     [header.CATEGORY]: 'zumba-fitness-fadoq',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles intérieur <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   },
   {
     [header.TITLE]: 'Zumba Fitness',
-    [header.DATE_START]: '2018-09-12',
-    [header.HOUR_START]: '18:15:00',
-    [header.HOUR_END]: '19:15:00',
-    [header.PLACE]: venues.HOTEL_VILLE_FRELIGSBURG,
+    [header.DATE_START]: '2019-01-16',
+    [header.HOUR_START]: '18:00:00',
+    [header.HOUR_END]: '19:00:00',
+    [header.PLACE]: venues.ECOLE_SAINT_EDOUARD,
     [header.CATEGORY]: 'zumba-fitness',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
@@ -88,7 +91,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Zumba Strong',
-    [header.DATE_START]: '2018-09-13',
+    [header.DATE_START]: '2019-01-17',
     [header.HOUR_START]: '18:15:00',
     [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -99,7 +102,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Zumba Strong',
-    [header.DATE_START]: '2018-09-15',
+    [header.DATE_START]: '2019-01-18',
     [header.HOUR_START]: '9:15:00',
     [header.HOUR_END]: '10:15:00',
     [header.PLACE]: venues.KNOWLTON,
