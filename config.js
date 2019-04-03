@@ -15,10 +15,10 @@ function getConfig() {
 
 // Global config to generate reccuring events
 const general = {
-  [schema.config.SESSION_NAME]: 'hiver-2018',
-  [schema.config.NB_RECURRING_WEEK]: 13,
-  [schema.config.BREAK_FROM]: '2019-03-04',
-  [schema.config.BREAK_TO]: '2019-03-10'
+  [schema.config.SESSION_NAME]: 'printemps-2019',
+  [schema.config.NB_RECURRING_WEEK]: 10,
+  [schema.config.BREAK_FROM]: null,
+  [schema.config.BREAK_TO]: null
 };
 
 const venues = {
@@ -29,25 +29,27 @@ const venues = {
   KNOWLTON: 3738,
   SALLE_ALEC_PELLETIER: 4214,
   ECOLE_SAINT_EDOUARD: 4215,
-  BALLET_CLASSIQUE: 4216
+  BALLET_CLASSIQUE: 4216,
+  CHALET_PLAGE_COWANSVILLE: 4497,
+  CENTRE_AQUATIQUE_COWANSVILLE: 4498,
 }
 
 // Events that will be repeated every weeks is defined here
 const events = [
+  // {
+  //   [header.TITLE]: 'Toning/Fitness',
+  //   [header.DATE_START]: '2019-01-14',
+  //   [header.HOUR_START]: '9:30:00',
+  //   [header.HOUR_END]: '10:30:00',
+  //   [header.PLACE]: venues.SALLE_ALEC_PELLETIER,
+  //   [header.CATEGORY]: 'Zumba Toning/Fitness',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
   {
     [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2019-01-14',
-    [header.HOUR_START]: '9:30:00',
-    [header.HOUR_END]: '10:30:00',
-    [header.PLACE]: venues.SALLE_ALEC_PELLETIER,
-    [header.CATEGORY]: 'Zumba Toning/Fitness',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
-  {
-    [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2019-01-14',
+    [header.DATE_START]: '2019-04-22',
     [header.HOUR_START]: '18:15:00',
     [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -58,7 +60,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Toning/Fitness',
-    [header.DATE_START]: '2019-01-15',
+    [header.DATE_START]: '2019-04-23',
     [header.HOUR_START]: '9:00:00',
     [header.HOUR_END]: '10:00:00',
     [header.PLACE]: venues.CAMP_GARAGONA,
@@ -67,20 +69,42 @@ const events = [
     [header.DESCRIPTION]:
       '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   },
+  // {
+  //   [header.TITLE]: 'Zumba Fitness groupe Fadoq (Zumba Gold)',
+  //   [header.DATE_START]: '2019-01-16',
+  //   [header.HOUR_START]: '10:45:00',
+  //   [header.HOUR_END]: '11:45:00',
+  //   [header.PLACE]: venues.BALLET_CLASSIQUE,
+  //   [header.CATEGORY]: 'zumba-fitness-fadoq',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles intérieur <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
   {
-    [header.TITLE]: 'Zumba Fitness groupe Fadoq (Zumba Gold)',
-    [header.DATE_START]: '2019-01-16',
-    [header.HOUR_START]: '10:45:00',
-    [header.HOUR_END]: '11:45:00',
-    [header.PLACE]: venues.BALLET_CLASSIQUE,
-    [header.CATEGORY]: 'zumba-fitness-fadoq',
+    [header.TITLE]: 'Danse Fitness avec bébé',
+    [header.DATE_START]: '2019-04-24',
+    [header.HOUR_START]: '10:30:00',
+    [header.HOUR_END]: '11:30:00',
+    [header.PLACE]: venues.CHALET_PLAGE_COWANSVILLE,
+    [header.CATEGORY]: 'zumba-fitness-bébé',
     [header.IMAGE]: '',
     [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles intérieur <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  },
+  {
+    [header.TITLE]: 'Strong 30 minutes hiit',
+    [header.DATE_START]: '2019-04-24',
+    [header.HOUR_START]: '12:15:00',
+    [header.HOUR_END]: '12:45:00',
+    [header.PLACE]: venues.CENTRE_AQUATIQUE_COWANSVILLE,
+    [header.CATEGORY]: 'zumba-fitness',
+    [header.IMAGE]: '',
+    [header.DESCRIPTION]:
+      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   },
   {
     [header.TITLE]: 'Zumba Fitness',
-    [header.DATE_START]: '2019-01-16',
+    [header.DATE_START]: '2019-04-24',
     [header.HOUR_START]: '18:00:00',
     [header.HOUR_END]: '19:00:00',
     [header.PLACE]: venues.ECOLE_SAINT_EDOUARD,
@@ -91,7 +115,7 @@ const events = [
   },
   {
     [header.TITLE]: 'Zumba Strong',
-    [header.DATE_START]: '2019-01-17',
+    [header.DATE_START]: '2019-04-25',
     [header.HOUR_START]: '18:15:00',
     [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -100,17 +124,17 @@ const events = [
     [header.DESCRIPTION]:
       '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   },
-  {
-    [header.TITLE]: 'Zumba Strong',
-    [header.DATE_START]: '2019-01-18',
-    [header.HOUR_START]: '9:15:00',
-    [header.HOUR_END]: '10:15:00',
-    [header.PLACE]: venues.KNOWLTON,
-    [header.CATEGORY]: 'zumba-strong',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Vous devez vous inscrire sur le site de la ville de Knowlton <br/>*Se présenter 5 minutes à l\'avance en cours de session.<br/><br/>'
-  }
+  // {
+  //   [header.TITLE]: 'Zumba Strong',
+  //   [header.DATE_START]: '2019-01-18',
+  //   [header.HOUR_START]: '9:15:00',
+  //   [header.HOUR_END]: '10:15:00',
+  //   [header.PLACE]: venues.KNOWLTON,
+  //   [header.CATEGORY]: 'zumba-strong',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Vous devez vous inscrire sur le site de la ville de Knowlton <br/>*Se présenter 5 minutes à l\'avance en cours de session.<br/><br/>'
+  // }
 ];
 
 // Aggregate repeating information
