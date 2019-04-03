@@ -82,7 +82,7 @@ const events = [
   // },
   {
     [header.TITLE]: 'Danse Fitness avec bébé',
-    [header.DATE_START]: '2019-04-24',
+    [header.DATE_START]: '2019-04-22',
     [header.HOUR_START]: '10:30:00',
     [header.HOUR_END]: '11:30:00',
     [header.PLACE]: venues.CHALET_PLAGE_COWANSVILLE,
