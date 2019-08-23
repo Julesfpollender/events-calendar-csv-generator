@@ -72,8 +72,8 @@ const events = [
   // {
   //   [header.TITLE]: 'Toning/Fitness',
   //   [header.DATE_START]: '2019-09-19',
-  //   [header.HOUR_START]: '9:00:00',
-  //   [header.HOUR_END]: '10:00:00',
+  //   [header.HOUR_START]: '18:15:00',
+  //   [header.HOUR_END]: '19:15:00',
   //   [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
   //   [header.CATEGORY]: 'Zumba Toning/Fitness',
   //   [header.IMAGE]: '',
@@ -116,8 +116,8 @@ const events = [
   {
     [header.TITLE]: 'Strong by Zumba',
     [header.DATE_START]: '2019-11-07',
-    [header.HOUR_START]: '9:00:00',
-    [header.HOUR_END]: '10:00:00',
+    [header.HOUR_START]: '18:15:00',
+    [header.HOUR_END]: '19:15:00',
     [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
     [header.CATEGORY]: 'zumba-strong',
     [header.IMAGE]: '',
