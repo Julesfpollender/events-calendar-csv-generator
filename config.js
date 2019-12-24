@@ -15,10 +15,10 @@ function getConfig() {
 
 // Global config to generate reccuring events
 const general = {
-  [schema.config.SESSION_NAME]: 'automne-2019',
-  [schema.config.NB_RECURRING_WEEK]: 6,
-  [schema.config.BREAK_FROM]: null,
-  [schema.config.BREAK_TO]: null
+  [schema.config.SESSION_NAME]: 'hiver-2020',
+  [schema.config.NB_RECURRING_WEEK]: 10,
+  [schema.config.BREAK_FROM]: '2020-03-27',
+  [schema.config.BREAK_TO]: '2020-03-29'
 };
 
 const venues = {
@@ -38,7 +38,7 @@ const venues = {
 const events = [
   // {
   //   [header.TITLE]: 'Zumba Fitness',
-  //   [header.DATE_START]: '2019-09-16',
+  //   [header.DATE_START]: '2020-01-13',
   //   [header.HOUR_START]: '18:15:00',
   //   [header.HOUR_END]: '19:15:00',
   //   [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
@@ -48,16 +48,49 @@ const events = [
   //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   // },
   // {
-  //   [header.TITLE]: 'Toning/Fitness',
-  //   [header.DATE_START]: '2019-09-17',
+  //   [header.TITLE]: 'Toning',
+  //   [header.DATE_START]: '2020-01-14',
   //   [header.HOUR_START]: '9:00:00',
   //   [header.HOUR_END]: '10:00:00',
-  //   [header.PLACE]: venues.HOTEL_VILLE_FRELIGSBURG,
-  //   [header.CATEGORY]: 'Zumba Toning/Fitness',
+  //   [header.PLACE]: venues.CAMP_GARAGONA,
+  //   [header.CATEGORY]: 'Zumba Toning',
   //   [header.IMAGE]: '',
   //   [header.DESCRIPTION]:
   //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   // },
+  // {
+  //   [header.TITLE]: 'Fitness/Strong',
+  //   [header.DATE_START]: '2020-01-15',
+  //   [header.HOUR_START]: '18:00:00',
+  //   [header.HOUR_END]: '19:00:00',
+  //   [header.PLACE]: venues.KNOWLTON,
+  //   [header.CATEGORY]: 'zumba-fitness-strong',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
+  // {
+  //   [header.TITLE]: 'Strong hiit',
+  //   [header.DATE_START]: '2020-01-16',
+  //   [header.HOUR_START]: '18:15:00',
+  //   [header.HOUR_END]: '19:15:00',
+  //   [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
+  //   [header.CATEGORY]: 'zumba-strong-hiit',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
+  {
+    [header.TITLE]: 'Zumba Fitness',
+    [header.DATE_START]: '2020-02-01',
+    [header.HOUR_START]: '9:00:00',
+    [header.HOUR_END]: '10:00:00',
+    [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
+    [header.CATEGORY]: 'zumba-fitness',
+    [header.IMAGE]: '',
+    [header.DESCRIPTION]:
+      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  },
   // {
   //   [header.TITLE]: 'Zumba Fitness/Strong',
   //   [header.DATE_START]: '2019-09-18',
@@ -80,50 +113,50 @@ const events = [
   //   [header.DESCRIPTION]:
   //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>- Chaque participant doit posséder ses propres Sticks Toning pour le cours de Zumba Toning. <br/> Achat possible chez Astra Fitness au coût de 30$.<br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
   // },
-  {
-    [header.TITLE]: 'Zumba Fitness',
-    [header.DATE_START]: '2019-11-04',
-    [header.HOUR_START]: '18:15:00',
-    [header.HOUR_END]: '19:15:00',
-    [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
-    [header.CATEGORY]: 'zumba-fitness',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
-  {
-    [header.TITLE]: 'Zumba Fitness',
-    [header.DATE_START]: '2019-11-05',
-    [header.HOUR_START]: '9:00:00',
-    [header.HOUR_END]: '10:00:00',
-    [header.PLACE]: venues.HOTEL_VILLE_FRELIGSBURG,
-    [header.CATEGORY]: 'zumba-fitness',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
-  {
-    [header.TITLE]: 'Zumba Fitness/Strong',
-    [header.DATE_START]: '2019-11-06',
-    [header.HOUR_START]: '18:00:00',
-    [header.HOUR_END]: '19:00:00',
-    [header.PLACE]: venues.KNOWLTON,
-    [header.CATEGORY]: 'zumba-strong',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
-  {
-    [header.TITLE]: 'Strong by Zumba',
-    [header.DATE_START]: '2019-11-07',
-    [header.HOUR_START]: '18:15:00',
-    [header.HOUR_END]: '19:15:00',
-    [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
-    [header.CATEGORY]: 'zumba-strong',
-    [header.IMAGE]: '',
-    [header.DESCRIPTION]:
-      '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  },
+  // {
+  //   [header.TITLE]: 'Zumba Fitness',
+  //   [header.DATE_START]: '2019-11-04',
+  //   [header.HOUR_START]: '18:15:00',
+  //   [header.HOUR_END]: '19:15:00',
+  //   [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
+  //   [header.CATEGORY]: 'zumba-fitness',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
+  // {
+  //   [header.TITLE]: 'Zumba Fitness',
+  //   [header.DATE_START]: '2019-11-05',
+  //   [header.HOUR_START]: '9:00:00',
+  //   [header.HOUR_END]: '10:00:00',
+  //   [header.PLACE]: venues.HOTEL_VILLE_FRELIGSBURG,
+  //   [header.CATEGORY]: 'zumba-fitness',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
+  // {
+  //   [header.TITLE]: 'Zumba Fitness/Strong',
+  //   [header.DATE_START]: '2019-11-06',
+  //   [header.HOUR_START]: '18:00:00',
+  //   [header.HOUR_END]: '19:00:00',
+  //   [header.PLACE]: venues.KNOWLTON,
+  //   [header.CATEGORY]: 'zumba-strong',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
+  // {
+  //   [header.TITLE]: 'Strong by Zumba',
+  //   [header.DATE_START]: '2019-11-07',
+  //   [header.HOUR_START]: '18:15:00',
+  //   [header.HOUR_END]: '19:15:00',
+  //   [header.PLACE]: venues.ECOLE_CLE_DES_CHAMPS,
+  //   [header.CATEGORY]: 'zumba-strong',
+  //   [header.IMAGE]: '',
+  //   [header.DESCRIPTION]:
+  //     '<h2>QUOI APPORTER?</h2>- Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Se munir d\'un tapis de sol (style Yoga) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
+  // },
   // {
   //   [header.TITLE]: 'Toning/Fitness',
   //   [header.DATE_START]: '2019-01-14',
@@ -175,17 +208,6 @@ const events = [
   //   [header.HOUR_END]: '11:30:00',
   //   [header.PLACE]: venues.CHALET_PLAGE_COWANSVILLE,
   //   [header.CATEGORY]: 'zumba-fitness-bébé',
-  //   [header.IMAGE]: '',
-  //   [header.DESCRIPTION]:
-  //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
-  // },
-  // {
-  //   [header.TITLE]: 'Strong 30 minutes hiit',
-  //   [header.DATE_START]: '2019-04-24',
-  //   [header.HOUR_START]: '12:15:00',
-  //   [header.HOUR_END]: '12:45:00',
-  //   [header.PLACE]: venues.CENTRE_AQUATIQUE_COWANSVILLE,
-  //   [header.CATEGORY]: 'zumba-fitness',
   //   [header.IMAGE]: '',
   //   [header.DESCRIPTION]:
   //     '<h2>QUOI APPORTER?</h2> - Tenue légère de sport <br/>- Grande bouteille d\'eau <br/>- Espadrilles (bon soutien) <br/>- Petite serviette (facultatif) <br/>- Votre bonne humeur et votre plus beau sourire! <br/>*Se présenter 5 minutes à l\'avance en cours de session et 10 minutes lors de l\'inscription.<br/><br/>[contact-form-7 id="364" title="Formulaire reservation"]'
